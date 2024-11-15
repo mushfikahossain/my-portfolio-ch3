@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Mushfika Hossain</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hey! I'm Mushfika, currently a student enrolled in Computer Programming at Humber, and this portfolio is for the course "Web Programming and Design"! <br> So far, we've learned the basics of web development with HTML, CSS, and JavaScript. <br> I hope to learn much more as we go along the semester and showcase my progress through this web page!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div id="allProjects">
+            <div class="project">
+                <p class="projectTitle">Project 1: Registration Form</p>
+                <img class="Registration Form" src="Registration Form.png" id="Registration" alt="Registration Form">
+                <button class="showButton">Details</button>
+                <div class="projectDetails" style="display: none">
+                    <p>This is one of my earliest projects from this class! <br>It startred with a simple registration form with HTML, <br>then became my first experience working with CSS. </p>
+                    <a href="https://mushfikahossain.github.io/lab-css-fundamentals/" target="_blank">View Project</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <p class="projectTitle">Project 2: Name Storage</p>
+                <img class="Storage Assignment" src="Storage Assignment.png" id="Storage" alt="Storage Assignment">
+                <button class="showButton">Details</button>
+                <div class="projectDetails" style="display: none">
+                    <p>This project is reletively recent, <br>where I learned how to implement APIs into my webpages. <br>This one in particular, works with Local Storage.</p>
+                    <a href="https://mushfikahossain.github.io/storage-assignment/" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span id="nameError" class="error"></span><br>
+                <br>
+                <br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span><br>
+                <br>
+                <br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="phone" id="phone" name="phone">
+                <span id="phoneError" class="error"></span><br>
+                <br>
+                <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <span id="messageError" class="error"></span><br>
+                <br>
+                <br>
+
+                <label><input type="radio" name="confirm" value="confirm" required> I verify that the data above is accurate.</label><br>
+                <br>
+
+                <button type="submit">Submit</button>
+                <p id="successMessage" class="success"></p>
+
+            </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mushfika Hossain</p>
+    </footer>
+</body>
+</html>
